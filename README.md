@@ -1,2 +1,2 @@
-# Java-Design-Patterns-
-According to GOF‘s Design Pattern,Implemented by Java.
+# Java-Design-Patterns
+Base on GOF‘s Design Pattern,Implemented by Java.
