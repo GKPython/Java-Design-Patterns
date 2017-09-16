@@ -3,7 +3,7 @@ abstract class Template {
     public abstract void print();
     
     public void update() {
-        System.out.println("¿ªÊ¼´òÓ¡");
+        System.out.println("å¼€å§‹æ‰“å°");
         for (int i = 0; i < 10; i++) {
             print();
         }
@@ -15,7 +15,7 @@ class TemplateConcrete extends Template {
 
     //@*verride
     public void print() {
-        System.out.println("ÕâÊÇ×ÓÀàµÄÊµÏÖ");
+        System.out.println("è¿™æ˜¯å­ç±»çš„å®ç°");
     }
 }
 //Test 

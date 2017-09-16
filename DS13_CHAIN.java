@@ -1,4 +1,4 @@
-//Õâ¸öÀı×Ó²»ÊÇºÜºÃ¡£
+//è¿™ä¸ªä¾‹å­ä¸æ˜¯å¾ˆå¥½ã€‚
 //Hand*er 
 
 interface RequestHandle {
@@ -12,10 +12,10 @@ class HRRequestHandle implements RequestHandle {
 
     public void handleRequest(Request request) {
         if (request instanceof DimissionRequest) {
-            System.out.println("ÒªÀëÖ°, ÈËÊÂÉóÅú!");
+            System.out.println("è¦ç¦»èŒ, äººäº‹å®¡æ‰¹!");
         } 
 
-        System.out.println("ÇëÇóÍê³É");
+        System.out.println("è¯·æ±‚å®Œæˆ");
     }
 }
 
@@ -30,7 +30,7 @@ class PMRequestHandle implements RequestHandle {
     
     public void handleRequest(Request request) {
         if (request instanceof AddMoneyRequest) {
-            System.out.println("Òª¼ÓĞ½, ÏîÄ¿¾­ÀíÉóÅú!");
+            System.out.println("è¦åŠ è–ª, é¡¹ç›®ç»ç†å®¡æ‰¹!");
         } else {
             rh.handleRequest(request);
         }
@@ -47,7 +47,7 @@ class TLRequestHandle implements RequestHandle {
 
     public void handleRequest(Request request) {
         if (request instanceof LeaveRequest) {
-            System.out.println("ÒªÇë¼Ù, ÏîÄ¿×é³¤ÉóÅú!");
+            System.out.println("è¦è¯·å‡, é¡¹ç›®ç»„é•¿å®¡æ‰¹!");
         } else {
             rh.handleRequest(request);
         }
@@ -61,17 +61,17 @@ public class DF13_CHAIN{
         RequestHandle pm = new PMRequestHandle(hr);
         RequestHandle tl = new TLRequestHandle(pm);
         
-        //team leader´¦ÀíÀëÖ°ÇëÇó
+        //team leaderå¤„ç†ç¦»èŒè¯·æ±‚
         Request request = new DimissionRequest();
         tl.handleRequest(request);
         
         System.out.println("===========");
-        //team leader´¦Àí¼ÓĞ½ÇëÇó
+        //team leaderå¤„ç†åŠ è–ªè¯·æ±‚
         request = new AddMoneyRequest();
         tl.handleRequest(request);
         
         System.out.println("========");
-        //ÏîÄ¿¾­ÀíÉÏÀí´ÇÖ°ÇëÇó
+        //é¡¹ç›®ç»ç†ä¸Šç†è¾èŒè¯·æ±‚
         request = new DimissionRequest();
         pm.handleRequest(request);
     }

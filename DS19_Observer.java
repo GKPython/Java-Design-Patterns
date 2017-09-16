@@ -48,7 +48,7 @@ class HuangPuCitizen extends Citizen {
         setHelp(help);
         for(int i = 0; i < pols.size(); i++) {
             Policeman pol = (Policeman)pols.get(i);
-            //Í¨Öª¾¯²ìÐÐ¶¯
+            //é€šçŸ¥è­¦å¯Ÿè¡ŒåŠ¨
             pol.action(this);
         }
     }
@@ -65,7 +65,7 @@ class TianHeCitizen extends Citizen {
         setHelp(help);
         for (int i = 0; i < pols.size(); i++) {
             Policeman pol = (Policeman)pols.get(i);
-            //Í¨Öª¾¯²ìÐÐ¶¯
+            //é€šçŸ¥è­¦å¯Ÿè¡ŒåŠ¨
             pol.action(this);
         }
     }
@@ -77,10 +77,10 @@ class HuangPuPoliceman implements Policeman {
     public void action(Citizen ci) {
        String help = ci.getHelp();
         if (help.equals("normal")) {
-            System.out.println("Ò»ÇÐÕý³£, ²»ÓÃ³ö¶¯");
+            System.out.println("ä¸€åˆ‡æ­£å¸¸, ä¸ç”¨å‡ºåŠ¨");
         }
         if (help.equals("unnormal")) {
-            System.out.println("ÓÐ·¸×ïÐÐÎª, »ÆÆÒ¾¯²ì³ö¶¯!");
+            System.out.println("æœ‰çŠ¯ç½ªè¡Œä¸º, é»„åŸ”è­¦å¯Ÿå‡ºåŠ¨!");
         }
     }
 }
@@ -90,10 +90,10 @@ class TianHePoliceman implements Policeman {
     public void action(Citizen ci) {
         String help = ci.getHelp();
         if (help.equals("normal")) {
-            System.out.println("Ò»ÇÐÕý³£, ²»ÓÃ³ö¶¯");
+            System.out.println("ä¸€åˆ‡æ­£å¸¸, ä¸ç”¨å‡ºåŠ¨");
         }
         if (help.equals("unnormal")) {
-            System.out.println("ÓÐ·¸×ïÐÐÎª, ÌìºÓ¾¯²ì³ö¶¯!");
+            System.out.println("æœ‰çŠ¯ç½ªè¡Œä¸º, å¤©æ²³è­¦å¯Ÿå‡ºåŠ¨!");
         }
     }
 }

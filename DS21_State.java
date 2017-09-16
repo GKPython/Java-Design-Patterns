@@ -27,14 +27,14 @@ interface Weather {
 class Rain implements Weather {
 
     public String getWeather() {
-        return "ÏÂÓê";
+        return "ä¸‹é›¨";
     }
 }
 
 class Sunshine implements Weather {
 
     public String getWeather() {
-        return "Ñô¹â";
+        return "é˜³å…‰";
     }
 }
 

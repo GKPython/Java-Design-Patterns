@@ -62,15 +62,15 @@ public class DS18_Memento{
 
     public static void main(String[] args) {
         Originator org = new Originator();
-        org.setState("¿ª»áÖĞ");
+        org.setState("å¼€ä¼šä¸­");
         
         Caretaker ctk = new Caretaker ();
-        ctk.setMemento(org.createMemento());//½«Êı¾İ·â×°ÔÚCaretaker
+        ctk.setMemento(org.createMemento());//å°†æ•°æ®å°è£…åœ¨Caretaker
         
-        org.setState("Ë¯¾õÖĞ");
-        org.showState();//ÏÔÊ¾
+        org.setState("ç¡è§‰ä¸­");
+        org.showState();//æ˜¾ç¤º
         
-        org.setMemento(ctk.getMemento());//½«Êı¾İÖØĞÂµ¼Èë
+        org.setMemento(ctk.getMemento());//å°†æ•°æ®é‡æ–°å¯¼å…¥
         org.showState();
     }
 }

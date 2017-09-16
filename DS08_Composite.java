@@ -34,7 +34,7 @@ class Programmer extends Employer {
 
     public Programmer(String name) {
         setName(name);
-        employers = null;//³ÌĞòÔ±, ±íÊ¾Ã»ÓĞÏÂÊôÁË
+        employers = null;//ç¨‹åºå‘˜, è¡¨ç¤ºæ²¡æœ‰ä¸‹å±äº†
     }
 
     public void add(Employer employer) {
@@ -50,7 +50,7 @@ class ProcectAssistant extends Employer {
 
     public ProcectAssistant(String name) {
         setName(name);
-        employers = null;//ÏîÄ¿ÖúÀí, ±íÊ¾Ã»ÓĞÏÂÊôÁË
+        employers = null;//é¡¹ç›®åŠ©ç†, è¡¨ç¤ºæ²¡æœ‰ä¸‹å±äº†
     }
 
     public void add(Employer employer) {
@@ -85,15 +85,15 @@ class ProjectManager extends Employer {
 public class DS08_Composite {
 
     public static void main(String[] args) {
-        Employer pm = new ProjectManager("ÏîÄ¿¾­Àí");
-        Employer pa = new ProcectAssistant("ÏîÄ¿ÖúÀí");
-        Employer programmer1 = new Programmer("³ÌĞòÔ±Ò»");
-        Employer programmer2 = new Programmer("³ÌĞòÔ±¶ş");
+        Employer pm = new ProjectManager("é¡¹ç›®ç»ç†");
+        Employer pa = new ProcectAssistant("é¡¹ç›®åŠ©ç†");
+        Employer programmer1 = new Programmer("ç¨‹åºå‘˜ä¸€");
+        Employer programmer2 = new Programmer("ç¨‹åºå‘˜äºŒ");
         
-        pm.add(pa);//ÎªÏîÄ¿¾­ÀíÌí¼ÓÏîÄ¿ÖúÀí
-        pm.add(programmer2);//ÎªÏîÄ¿¾­ÀíÌí¼Ó³ÌĞòÔ±
+        pm.add(pa);//ä¸ºé¡¹ç›®ç»ç†æ·»åŠ é¡¹ç›®åŠ©ç†
+        pm.add(programmer2);//ä¸ºé¡¹ç›®ç»ç†æ·»åŠ ç¨‹åºå‘˜
         
-		//×¢Òâ£¬ÕâÀïÈç¹û²»¼Ó<>ÀïÃæµÄ¶«Î÷£¬¾¹È»²»ÄÜ±àÒëÍ¨¹ı£¬Õâ¸öÊÇÒòÎª·ºĞÍ±à³Ì
+		//æ³¨æ„ï¼Œè¿™é‡Œå¦‚æœä¸åŠ <>é‡Œé¢çš„ä¸œè¥¿ï¼Œç«Ÿç„¶ä¸èƒ½ç¼–è¯‘é€šè¿‡ï¼Œè¿™ä¸ªæ˜¯å› ä¸ºæ³›å‹ç¼–ç¨‹
         List<Employer> ems = pm.getEmployers();
 		int emsCount = ems.size();
 		for(int i = 0; i <emsCount;++i)

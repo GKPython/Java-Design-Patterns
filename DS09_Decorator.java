@@ -1,18 +1,18 @@
-//Component¶¨ÒåÒ»¸ö¶ÔÏó½Ó¿Ú£¬¿ÉÒÔ¸øÕâĞ©¶ÔÏó¶¯Ì¬µØÌí¼ÓÖ°Ôğ¡£
+//Componentå®šä¹‰ä¸€ä¸ªå¯¹è±¡æ¥å£ï¼Œå¯ä»¥ç»™è¿™äº›å¯¹è±¡åŠ¨æ€åœ°æ·»åŠ èŒè´£ã€‚
 interface Person {
 
     void eat();
 }
 
-//ConcreteComponent ¶¨ÒåÒ»¸ö¶ÔÏó£¬¿ÉÒÔ¸øÕâ¸ö¶ÔÏóÌí¼ÓÒ»Ğ©Ö°Ôğ¡£
+//ConcreteComponent å®šä¹‰ä¸€ä¸ªå¯¹è±¡ï¼Œå¯ä»¥ç»™è¿™ä¸ªå¯¹è±¡æ·»åŠ ä¸€äº›èŒè´£ã€‚
 class Man implements Person {
 
 	public void eat() {
-		System.out.println("ÄĞÈËÔÚ³Ô");
+		System.out.println("ç”·äººåœ¨åƒ");
 	}
 }
 
-//Decorator Î¬³ÖÒ»¸öÖ´ĞĞComponent¶ÔÏóµÄÖ¸Õë£¬²¢¶¨ÒåÒ»¸öÓëComponect ½Ó¿ÚÒ»ÖÂµÄ½Ó¿Ú¡£
+//Decorator ç»´æŒä¸€ä¸ªæ‰§è¡ŒComponentå¯¹è±¡çš„æŒ‡é’ˆï¼Œå¹¶å®šä¹‰ä¸€ä¸ªä¸Componect æ¥å£ä¸€è‡´çš„æ¥å£ã€‚
 abstract class Decorator implements Person {
 
     protected Person person;
@@ -26,17 +26,17 @@ abstract class Decorator implements Person {
     }
 }
 
-//ConcreteDectrator Ïë×é½¨Ìí¼ÓÖ°Ôğ
+//ConcreteDectrator æƒ³ç»„å»ºæ·»åŠ èŒè´£
 class ManDecoratorA extends Decorator {
 
     public void eat() {
         super.eat();
         reEat();
-        System.out.println("ManDecoratorAÀà");
+        System.out.println("ManDecoratorAç±»");
     }
 
     public void reEat() {
-        System.out.println("ÔÙ³ÔÒ»¶Ù·¹");
+        System.out.println("å†åƒä¸€é¡¿é¥­");
     }
 }
 
@@ -45,7 +45,7 @@ class ManDecoratorB extends Decorator {
     public void eat() {
         super.eat();
         System.out.println("===============");
-        System.out.println("ManDecoratorBÀà");
+        System.out.println("ManDecoratorBç±»");
     }
 }
 

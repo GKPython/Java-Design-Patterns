@@ -1,4 +1,4 @@
-//CommandÉùÃ÷Ö´ĞĞ²Ù×÷µÄ½Ó¿Ú
+//Commandå£°æ˜æ‰§è¡Œæ“ä½œçš„æ¥å£
 abstract class Command {
     
     protected Receiver receiver;
@@ -10,7 +10,7 @@ abstract class Command {
     public abstract void execute();
 }
 
-//creteCommand½«Ò»¸ö½ÓÊÕÕß¶ÔÏó°ó¶¨ÓÚÒ»¸ö¶¯×÷¡£µ÷ÓÃ½ÓÊÕÕßÏàÓ¦µÄ²Ù×÷£¬ÒÔÊµÏÖExecute¡£
+//creteCommandå°†ä¸€ä¸ªæ¥æ”¶è€…å¯¹è±¡ç»‘å®šäºä¸€ä¸ªåŠ¨ä½œã€‚è°ƒç”¨æ¥æ”¶è€…ç›¸åº”çš„æ“ä½œï¼Œä»¥å®ç°Executeã€‚
 class CommandImpl extends Command {
 
     public CommandImpl(Receiver receiver) {
@@ -22,7 +22,7 @@ class CommandImpl extends Command {
     }
 }
 
-//InvokerÒªÇó¸ÃÃüÁîÖ´ĞĞÕâ¸öÇëÇó¡£
+//Invokerè¦æ±‚è¯¥å‘½ä»¤æ‰§è¡Œè¿™ä¸ªè¯·æ±‚ã€‚
 
 class Invoker {
 
@@ -37,7 +37,7 @@ class Invoker {
     }
 }
 
-//ReceiverÖªµÀÈçºÎÊµÏÖÓëÖ´ĞĞÒ»¸öÇëÇóÏà¹ØµÄ²Ù×÷¡£ÈÎºÎÀà¶¼¿ÉÄÜ×÷ÎªÒ»¸ö½ÓÊÕÕß¡£
+//ReceiverçŸ¥é“å¦‚ä½•å®ç°ä¸æ‰§è¡Œä¸€ä¸ªè¯·æ±‚ç›¸å…³çš„æ“ä½œã€‚ä»»ä½•ç±»éƒ½å¯èƒ½ä½œä¸ºä¸€ä¸ªæ¥æ”¶è€…ã€‚
 class Receiver {
 
     public void receive() {

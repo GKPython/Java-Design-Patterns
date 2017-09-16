@@ -1,5 +1,5 @@
 //Visitor
-//不是很理解这个有问题
+//涓嶆槸寰堢悊瑙ｈ繖涓湁闂
 import java.util.*;
 
 interface Visitor {

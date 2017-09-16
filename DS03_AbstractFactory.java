@@ -1,5 +1,5 @@
 
-//抽象产品
+//鎶借薄浜у搧
 interface ICat {
 
     void eat();
@@ -10,7 +10,7 @@ interface IDog {
     void eat();
 }
 
-//具体产品
+//鍏蜂綋浜у搧
 class BlackCat implements ICat {
 
     public void eat() {
@@ -40,7 +40,7 @@ class WhiteDog implements IDog {
 }
 
 
-// 抽象工厂
+// 鎶借薄宸ュ巶
 interface IAnimalFactory{
 
     ICat createCat();
@@ -48,7 +48,7 @@ interface IAnimalFactory{
     IDog createDog();
 }
 
-//具体工厂
+//鍏蜂綋宸ュ巶
 class BlackAnimalFactory implements IAnimalFactory {
 
     public ICat createCat() {

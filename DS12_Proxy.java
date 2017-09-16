@@ -4,14 +4,14 @@ class ProxyObject implements Object {
     Object obj;
     
     public ProxyObject() {
-        System.out.println("ÕâÊÇ´úÀíÀà");
+        System.out.println("è¿™æ˜¯ä»£ç†ç±»");
         obj = new ObjectImpl();
     }
     
     public void action() {
-        System.out.println("´úÀí¿ªÊ¼");
+        System.out.println("ä»£ç†å¼€å§‹");
         obj.action();
-        System.out.println("´úÀí½áÊø");
+        System.out.println("ä»£ç†ç»“æŸ");
     }
 }
 
@@ -27,7 +27,7 @@ class ObjectImpl implements Object {
     public void action() {
         System.out.println("========");
         System.out.println("========");
-        System.out.println("ÕâÊÇ±»´úÀíµÄÀà");
+        System.out.println("è¿™æ˜¯è¢«ä»£ç†çš„ç±»");
         System.out.println("========");
         System.out.println("========");
     }

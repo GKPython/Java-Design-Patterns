@@ -1,9 +1,9 @@
-//³éÏó¹¤³§
+//æŠ½è±¡å·¥å‚
 interface Driver{
 	public Car driverCar();
 } 
 
-//¾ßÌå¹¤³§Àà
+//å…·ä½“å·¥å‚ç±»
 class BenzDriver implements Driver{
 	public Car driverCar(){
 		return new Benz();
@@ -16,13 +16,13 @@ class BmwDriver implements Driver{
 	}
 } 
 
-//³éÏó²úÆ·
+//æŠ½è±¡äº§å“
 interface Car
 {
 	public void drive();
 }
 
-//¾ßÌå²úÆ·Àà
+//å…·ä½“äº§å“ç±»
 class Benz implements Car{
 	public void drive() {
 		System.out.println("Driving Benz ");

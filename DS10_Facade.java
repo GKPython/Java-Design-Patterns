@@ -15,21 +15,21 @@ interface ServiceC{
 class ServiceAImpl implements ServiceA {
 
     public void methodA() {
-        System.out.println("这是服务A");
+        System.out.println("杩欐槸鏈嶅姟A");
     }
 }
 
 class ServiceBImpl implements ServiceB {
 
     public void methodB() {
-        System.out.println("这是服务B");
+        System.out.println("杩欐槸鏈嶅姟B");
     }
 }
 
 class ServiceCImpl implements ServiceC {
 
     public void methodC() {
-        System.out.println("这是服务C");
+        System.out.println("杩欐槸鏈嶅姟C");
     }
 }
 

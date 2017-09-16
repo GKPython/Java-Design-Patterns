@@ -8,21 +8,21 @@ abstract class Strategy {
 class strategyImplA extends Strategy {
 
     public void method() {
-        System.out.println("ÕâÊÇµÚÒ»¸öÊµÏÖ");
+        System.out.println("è¿™æ˜¯ç¬¬ä¸€ä¸ªå®ç°");
     }
 }
 
 class StrategyImplB extends Strategy {
 
     public void method() {
-        System.out.println("ÕâÊÇµÚ¶ş¸öÊµÏÖ");
+        System.out.println("è¿™æ˜¯ç¬¬äºŒä¸ªå®ç°");
     }
 }
 
 class StrategyImplC extends Strategy {
 
     public void method() {
-        System.out.println("ÕâÊÇµÚÈı¸öÊµÏÖ");
+        System.out.println("è¿™æ˜¯ç¬¬ä¸‰ä¸ªå®ç°");
     }
 }
 

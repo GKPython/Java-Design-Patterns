@@ -20,15 +20,15 @@ class ManBuilder implements PersonBuilder {
     }
     
     public void buildBody() {
-        person.setBody("½¨ÔìÄĞÈËµÄÉíÌå");
+        person.setBody("å»ºé€ ç”·äººçš„èº«ä½“");
     }
 
     public void buildFoot() {
-        person.setFoot("½¨ÔìÄĞÈËµÄ½Å");
+        person.setFoot("å»ºé€ ç”·äººçš„è„š");
     }
 
     public void buildHead() {
-        person.setHead("½¨Ôì*ÈËµÄÍ·");
+        person.setHead("å»ºé€ *äººçš„å¤´");
     }
 
     public Person buildPerson() {

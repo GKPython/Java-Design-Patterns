@@ -18,11 +18,11 @@ class ConcreteMediator extends Mediator {
     
     public void notice(String content) {
         if (content.equals("boss")) {
-            //ÀÏ°åÀ´ÁË, Í¨ÖªÔ±¹¤A
+            //è€æ¿æ¥äº†, é€šçŸ¥å‘˜å·¥A
             ca.action();
         }
         if (content.equals("client")) {
-            //¿Í»§À´ÁË,Í¨ÖªÇ°Ì¨B
+            //å®¢æˆ·æ¥äº†,é€šçŸ¥å‰å°B
             cb.action();
         }
     }
@@ -37,14 +37,14 @@ class ColleagueA extends Colleague {
 
     
     public void action(){
-        System.out.println("ÆÕÍ¨Ô±¹¤Å¬Á¦¹¤×÷");
+        System.out.println("æ™®é€šå‘˜å·¥åŠªåŠ›å·¥ä½œ");
     }
 }
 
 class ColleagueB extends Colleague {
 
     public void action() {
-        System.out.println("Ç°Ì¨×¢ÒâÁË!");
+        System.out.println("å‰å°æ³¨æ„äº†!");
     }
 }
 
@@ -52,10 +52,10 @@ public class DS17_Mediator {
 
     public static void main(String[] args) {
         Mediator med = new ConcreteMediator();
-        //ÀÏ°åÀ´ÁË
+        //è€æ¿æ¥äº†
         med.notice("boss");
         
-        //¿Í»§À´ÁË
+        //å®¢æˆ·æ¥äº†
         med.notice("client");
     }
 }

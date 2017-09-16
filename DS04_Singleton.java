@@ -1,10 +1,10 @@
 import java.util.HashMap;
 class Singleton
 {
-	//ÓÃÀ´´æ·Å¶ÔÓ¦¹ØÏµ
+	//ç”¨æ¥å­˜æ”¾å¯¹åº”å…³ç³»
 	private static HashMap sinRegistry = new HashMap();
 	static private Singleton s = new Singleton();
-	//ÊÜ±£»¤µÄ¹¹Ôìº¯Êı
+	//å—ä¿æŠ¤çš„æ„é€ å‡½æ•°
 	protected Singleton()
 	{}
 	public static Singleton getInstance(String name)

@@ -1,10 +1,10 @@
-//³éÏó²úÆ·
+//æŠ½è±¡äº§å“
 interface Car
 {
 	public void drive();
 }
 
-//¾ßÌå²úÆ·Àà
+//å…·ä½“äº§å“ç±»
 class Benz implements Car{
 	public void drive() {
 		System.out.println("Driving Benz ");
@@ -17,7 +17,7 @@ class Bmw implements Car{
 	}
 }
 
-//¹¤³§Àà½ÇÉ«
+//å·¥å‚ç±»è§’è‰²
 class Driver{ 
 	public static Car driverCar(String s)throws Exception {
 		if(s.equalsIgnoreCase("Benz"))

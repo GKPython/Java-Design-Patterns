@@ -1,6 +1,6 @@
 import java.util.*;
 
-//Õâ¸öÀı×Ó²»Ì«ºÃ
+//è¿™ä¸ªä¾‹å­ä¸å¤ªå¥½
 
 //Flyweight 
 interface Flyweight {
@@ -13,7 +13,7 @@ class FlyweightImpl implements Flyweight {
 
     public void action(int arg) {
         // TODO Auto-generated method stub
-        System.out.println("²ÎÊıÖµ:" + arg);
+        System.out.println("å‚æ•°å€¼:" + arg);
     }
 }
 

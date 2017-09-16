@@ -26,7 +26,7 @@ abstract class Person {
 class Man extends Person {
     
     public Man() {
-        setType("ÄĞÈË");
+        setType("ç”·äºº");
     }
     
     public void dress() {
@@ -38,7 +38,7 @@ class Man extends Person {
 class Lady extends Person {
 
     public Lady() {
-        setType("Å®ÈË");
+        setType("å¥³äºº");
     }
     
     public void dress() {
@@ -55,14 +55,14 @@ abstract class Clothing {
 class Jacket extends Clothing {
 
     public void personDressCloth(Person person) {
-        System.out.println(person.getType() + "´©Âí¼×");
+        System.out.println(person.getType() + "ç©¿é©¬ç”²");
     }
 }
 
 class Trouser extends Clothing {
 
     public void personDressCloth(Person person) {
-        System.out.println(person.getType() + "´©¿ã×Ó");
+        System.out.println(person.getType() + "ç©¿è£¤å­");
     }
 }
 

@@ -96,14 +96,14 @@ public class DS16_Iterator{
         list.add("a");
         list.add("b");
         list.add("c");
-        //µÚÒ»ÖÖµü´ú·½Ê½
+        //ç¬¬ä¸€ç§è¿­ä»£æ–¹å¼
         Iterator it = list.iterator();
         while (it.hasNext()) {
             System.out.println(it.next());
         }
         
         System.out.println("=====");
-        //µÚ¶şÖÖµü´ú·½Ê½
+        //ç¬¬äºŒç§è¿­ä»£æ–¹å¼
         for (int i = 0; i < list.getSize(); i++) {
             System.out.println(list.get(i));
         }

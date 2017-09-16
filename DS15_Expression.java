@@ -1,7 +1,7 @@
-//Õâ¸öÀı×Ó²»´í£¬ĞèÒªÔÙºÃºÃ¿´¿´
+//è¿™ä¸ªä¾‹å­ä¸é”™ï¼Œéœ€è¦å†å¥½å¥½çœ‹çœ‹
 
 import java.util.*;
-//ÉÏÏÂÎÄ£¨»·¾³£©½ÇÉ«£¬Ê¹ÓÃHashMap À´´æ´¢±äÁ¿¶ÔÓ¦µÄÊıÖµ
+//ä¸Šä¸‹æ–‡ï¼ˆç¯å¢ƒï¼‰è§’è‰²ï¼Œä½¿ç”¨HashMap æ¥å­˜å‚¨å˜é‡å¯¹åº”çš„æ•°å€¼
 class Context{
 	private Map valueMap = new HashMap();
 	public void addValue(Variable x , int y){
@@ -15,12 +15,12 @@ class Context{
 	}
 }
 
-//³éÏó±í´ïÊ½½ÇÉ«£¬Ò²¿ÉÒÔÓÃ½Ó¿ÚÀ´ÊµÏÖ
+//æŠ½è±¡è¡¨è¾¾å¼è§’è‰²ï¼Œä¹Ÿå¯ä»¥ç”¨æ¥å£æ¥å®ç°
 abstract class Expression{
 	public abstract int interpret(Context con);
 }
 
-//ÖÕ½á·û±í´ïÊ½½ÇÉ«
+//ç»ˆç»“ç¬¦è¡¨è¾¾å¼è§’è‰²
 class Constant extends Expression{
 	private int i ;
 	public Constant(int i){
@@ -33,12 +33,12 @@ class Constant extends Expression{
 
 class Variable extends Expression{
 	public int interpret(Context con) {
-	//this Îªµ÷ÓÃinterpret ·½·¨µÄVariable ¶ÔÏó
+	//this ä¸ºè°ƒç”¨interpret æ–¹æ³•çš„Variable å¯¹è±¡
 		return con.LookupValue(this);
 	}
 }
 
-//·ÇÖÕ½á·û±í´ïÊ½½ÇÉ«
+//éç»ˆç»“ç¬¦è¡¨è¾¾å¼è§’è‰²
 class Add extends Expression{
 	private Expression left ,right ;
 	public Add(Expression left , Expression right) {
@@ -82,7 +82,7 @@ class Division extends Expression{
 		try{
 			return left.interpret(con) / right.interpret(con);
 		}catch(ArithmeticException ae) {
-			System.out.println("±»³ıÊıÎª0£¡");
+			System.out.println("è¢«é™¤æ•°ä¸º0ï¼");
 			return -11111;
 		}
 	}
@@ -94,15 +94,15 @@ public class DS15_Expression
 	private static Context con ;
 	public static void main(String[] args){
 		con = new Context();
-		//ÉèÖÃ±äÁ¿¡¢³£Á¿
+		//è®¾ç½®å˜é‡ã€å¸¸é‡
 		Variable a = new Variable();
 		Variable b = new Variable();
 		Constant c = new Constant(2);
-		//Îª±äÁ¿¸³Öµ
+		//ä¸ºå˜é‡èµ‹å€¼
 		con.addValue(a , 5);
 		con.addValue(b , 3);
-		//ÔËËã£¬¶Ô¾ä×ÓµÄ½á¹¹ÓÉÎÒÃÇ×Ô¼ºÀ´·ÖÎö£¬¹¹Ôì
+		//è¿ç®—ï¼Œå¯¹å¥å­çš„ç»“æ„ç”±æˆ‘ä»¬è‡ªå·±æ¥åˆ†æï¼Œæ„é€ 
 		ex = new Division(new Multiply(a , b), new Add(new Subtract(a , b) , c));
-		System.out.println("ÔËËã½á¹ûÎª£º"+ex.interpret(con));
+		System.out.println("è¿ç®—ç»“æœä¸ºï¼š"+ex.interpret(con));
 	}
 }
